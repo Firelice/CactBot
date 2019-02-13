@@ -2,10 +2,10 @@
 
 A simple DiscordBot that has several commands and does several things with wrappers. The primary goal is to help trivialize various aspects of raiding that is hard to keep track of by automating raids. It will interface with a Google Sheet to gather available times and present them into the discord client as well as manage loot aspects.
 
-##Getting Started
+## Getting Started
 Simply clone and use your own Discord bot token and Google Drive token and run.
 
-###Prerequisites
+### Prerequisites
 
 ```
 discord.py
@@ -22,10 +22,10 @@ pep3 install gspread
 
 ```
 
-###Versioning
+### Versioning
 I use [SemVer](http://semver.org/) for versioning.
 
-###Basic Commands
+### Basic Commands
 ```
 !help will display all of the available commands
 !drops or loot will display various aspects depending on params
