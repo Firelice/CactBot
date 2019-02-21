@@ -21,7 +21,10 @@ async def joke(context):
     """
     jokes = [
         "Samurai is a \U0000267F",
-        "\U0000267FCactuar  Crew  coming through!\U0000267F"
+        "\U0000267FCactuar  Crew  coming through!\U0000267F",
+        "A dragoon walks into a bar...\n ...Everyone else dodges it.",
+        "Summoners ruin everything!",
+        "When does the Ninja arrive at a party...\n Raiton time!"
     ]
     await bot.say(random.choice(jokes) + ", " + context.message.author.mention)
 
