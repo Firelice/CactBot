@@ -1,6 +1,7 @@
 from discord.ext.commands import Bot
 from tokens import fetchtokens
 from src.fetchlists import fetchlists
+from src.pyinterface import datainterface
 
 
 TOKEN = fetchtokens.fetchdiscordtoken()
@@ -23,6 +24,17 @@ async def joke(context):
     joke = fetchlists.joke()
     # fetches a joke
     await bot.say(context.message.author.mention + "\n" + joke)
+
+
+@bot.command(name = 'add',
+             description="Adds the Final Fantasy character name to the database",
+             aliases=['Add'],
+             pass_context=True)
+async def add(context, *, message):
+    print("Adding " + message + " to static.")
+    datainterface.insert_chara(message, str(context.message.author.id))
+    await bot.add_reaction(context.message, '\U0001F44D')
+
 
 
 bot.run(TOKEN)
