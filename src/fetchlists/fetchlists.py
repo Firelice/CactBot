@@ -15,6 +15,7 @@ def joke():
         "What happened when the waiter tripped in Eorzea Cafè...\nThe server went down!",
         "Roegadyn Ninja!",
         "Vyn's Subway Sandwiches!",
-        "Pineapple on Pizza!"
+        "Pineapple on Pizza!",
+        "Cactuar Crew on O10S! \U0001F409"
     ]
     return random.choice(jokes)
